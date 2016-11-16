@@ -46,14 +46,7 @@
 #endif
 #endif
 
-/* Backward compatibility for MPTCP_ENABLED between kernel 3 & 4 */
-#ifndef MPTCP_ENABLED
-#ifdef TCP_CC_INFO
 #define MPTCP_ENABLED 42
-#else
-#define MPTCP_ENABLED 26
-#endif
-#endif
 
 /** byte size of ip4 address */
 #define INET_SIZE 4
